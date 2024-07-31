@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe page</title>
+    <meta name="description" content="A detailed recipe for Eggplant Parmigiana, including ingredients and step-by-step instructions.">
+    <meta name="keywords" content="recipe, eggplant parmigiana, cooking, food">
+    <meta name="author" content="Sergiu">
+    <link rel="stylesheet" href="week1.css">
+</head>
+<body>
+    <header role="banner">
+        <h1>WEEK 1 PROJECT</h1>
+    </header>
+    <main role="main">
+        <div class="container">
+            <h2 class="title" id="recipe-title">EGGPLANT PARMIGIANA (PARMIGIANA DI MELANZANE)</h2>
+            <figure class="image" role="img" aria-labelledby="recipe-title">
+                <img src="https://www.marthastewart.com/thmb/k1IM_GzANp1p0Yj8_Eu_RipySeo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-eggplant-parm-227-med109000_vert-268350ea432d440ea6f0fa14e3afb436-horiz-0823-f6dad68052ab467f97c9bd8dadb83be8.jpg" alt="A serving of Eggplant Parmigiana with melted cheese on top">
+            </figure>
+            <section class="ingredients" aria-labelledby="ingredients-heading">
+                <h2 id="ingredients-heading">Ingredients</h2>
+                <ul>
+                    <li>2 large eggplants (700g / 1.5 lbs)</li>
+                    <li>Pureed tomatoes (passata) (700g / 1.5 lbs)</li>
+                    <li>1 white onion</li>
+                    <li>Small bunch of basil</li>
+                    <li>Mozzarella cut into cubes (250g / 8.8oz)</li>
+                    <li>Parmesan cheese (70g / ¾ cup)</li>
+                    <li>Olive oil (½ tablespoon)</li>
+                    <li>Flour for dusting</li>
+                    <li>Sunflower oil for frying (125ml / around ½ cup)</li>
+                    <li>Salt and pepper</li>
+                </ul>
+            </section>
+            <section class="instructions" aria-labelledby="instructions-heading">
+                <h2 id="instructions-heading">Instructions</h2>
+                <ol>
+                    <li>Thinly slice the eggplant/aubergines then place them in a colander. Sprinkle them lightly with salt and set them aside for 1 hour. This drains off any excess water and helps with frying.</li>
+                    <li>Meanwhile, make the simple tomato sauce. Finely chop 1 onion and sauté in a pan with the olive oil until translucent and soft but not browned. Add the tomato passata (pureed tomatoes) and a small bunch of basil torn with your hands. Add a pinch of salt and pepper, stir then let it simmer gently for 10-15 minutes. Set aside.</li>
+                    <li>Rinse the eggplant slices under cold water and pat them dry with a kitchen towel or paper. Lightly dust them with flour, shaking off any excess then fry them in sunflower oil for a few seconds each side, drain on kitchen paper to remove any excess oil.</li>
+                    <li>Preheat the oven to 180°C/350F/gas mark 4. I used an 11x8 inch oval dish but a rectangle or square dish around the same size will work too e.g 10x8 inch.</li>
+                    <li>Spoon a small amount of tomato sauce into the bottom of a baking dish and spread it around, this will stop the eggplant from sticking.</li>
+                    <li>Next add one layer of eggplant to the dish followed by a sprinkling of parmesan cheese, cubes of mozzarella, a sprinkling of pepper and a couple of spoons of tomato sauce (save ⅓ of the sauce for the final layer). Continue with the next layer until you have one top layer left.</li>
+                    <li>For the top layer, spoon over the remaining tomato sauce and top with parmesan and mozzarella. Cover loosely with foil and bake for 20 minutes, remove the foil and bake for another 20 minutes until nice and golden and bubbling on top. Let it rest for 5 minutes before serving.</li>
+                </ol>
+            </section>
+        </div>
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <h4 id="newsletter-heading">Subscribe to our newsletter!</h4>
+            <form action="/submit" method="post" onsubmit="alert('Thank you for subscribing!'); return false;">
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your email address</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        Follow onion-coding on <a href="https://github.com/onion-coding" aria-label="Onion Coding GitHub profile">Github</a>
+    </footer>
+</body>
+</html>
